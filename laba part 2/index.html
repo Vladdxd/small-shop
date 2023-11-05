@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="https://content2.rozetka.com.ua/mb_logo/image_site_mini_logo/original/349608608.svg" type="image/x-icon" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <img class="header__logo" src="https://content2.rozetka.com.ua/mb_logo/image_site_mini_logo/original/349608608.svg" alt="" />
+                    <a class="header__cart" type="button" data-toggle="modal" data-target=".bd-example-modal-lg"><img class="header__cart-logo" src="cart.svg" alt="" /></a>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Корзина</h4>
+                                    <button type="button" class="close" data-dismiss="modal">X</button>
+                                </div>
+                                <div class="cart__modal-body">
+                                    <ul class="cart-items">
+                                        <p class="cart-empty">Корзина пустая</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="wrapper">
+                <aside class="aside__filter">
+                    <select class="aside__sorting form-select">
+                        <option value="cheap">За спаданням</option>
+                        <option value="expensive">За зростанням</option>
+                    </select>
+                    <h4 class="aside__heading">Бренд</h4>
+                    <ul class="brand-filters filter-list"></ul>
+                    <h4 class="aside__heading">Тип продукту</h4>
+                    <ul class="type-filters filter-list"></ul>
+                </aside>
+                <main>
+                    <ul class="catalog-grid"></ul>
+
+                    <div class="modal fade item__open-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-window">
+                            <div class="modal-content">
+                                <div class="modal-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="reset.css" />
+        <!-- Подключение стилей Bootstrap (CSS) -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <!-- Подключение скриптов Bootstrap (JS) -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
